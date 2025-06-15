@@ -1,0 +1,17 @@
+GET http://localhost:3000/productos  HTTP/1.1
+
+###
+GET http://localhost:3000/productos/4  HTTP/1.1
+
+
+###
+POST http://localhost:3000/productos  HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Producto Nuevo",
+  "precio": 100,
+  "descripcion": "Descripción del producto nuevo"
+}
+###
+DELETE http://localhost:3000/productos/4  HTTP/1.1
